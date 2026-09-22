@@ -1,16 +1,83 @@
-# React + Vite
+# IntelliDesk AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> AI-powered productivity and task management platform built with React, JavaScript, Python, FastAPI, SQL, and Ollama/Gemma.
 
-Currently, two official plugins are available:
+## 📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+IntelliDesk AI is a full-stack productivity platform designed to help users manage tasks and understand how to approach their work.
 
-## React Compiler
+Unlike a traditional To-Do application that mainly stores and tracks tasks, IntelliDesk AI integrates AI-powered task analysis into the workflow.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can describe a task and receive:
 
-## Expanding the ESLint configuration
+- Priority
+- Estimated time
+- Complexity
+- Recommended steps
+- AI-generated advice
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The user can then review the AI suggestions and create/manage the task.
+
+---
+
+## 🎯 Why IntelliDesk AI?
+
+Traditional task-management applications help users remember **what** they need to do.
+
+IntelliDesk AI aims to additionally help users understand:
+
+- How important the task may be
+- How complex it may be
+- How much time it could require
+- What steps they could follow
+- How they could approach the task
+
+The goal is to combine **task management with AI-assisted planning** in a single workspace.
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+- User registration
+- User login
+- Protected application routes
+- Logout functionality
+
+### 📋 Task Management
+- Create tasks
+- Edit tasks
+- Delete tasks
+- Complete tasks
+- Task status management
+- Priority management
+- Search and filtering
+
+### 🤖 AI Task Analysis
+
+The AI analyzes a user's task and provides:
+
+- Priority
+- Estimated time
+- Complexity
+- Recommended action steps
+- AI advice
+
+### 🧠 AI-Assisted Task Creation
+
+Users can analyze a task before creating it.
+
+```text
+Describe Task
+      ↓
+AI Analysis
+      ↓
+Priority
+Complexity
+Estimated Time
+Recommended Steps
+AI Advice
+      ↓
+User Review
+      ↓
+Create Task
