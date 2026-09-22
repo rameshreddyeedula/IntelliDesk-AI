@@ -1,83 +1,82 @@
 # IntelliDesk AI
 
-> AI-powered productivity and task management platform built with React, JavaScript, Python, FastAPI, SQL, and Ollama/Gemma.
+IntelliDesk AI is a full-stack task management application with an AI assistant.
 
-## 📌 Overview
+It helps users create and manage tasks and also analyze a task using AI to get priority, estimated time, complexity, recommended steps, and basic advice.
 
-IntelliDesk AI is a full-stack productivity platform designed to help users manage tasks and understand how to approach their work.
+## Features
 
-Unlike a traditional To-Do application that mainly stores and tracks tasks, IntelliDesk AI integrates AI-powered task analysis into the workflow.
+- User registration and login
+- Create, update and delete tasks
+- Set task priority and status
+- Set due dates
+- AI-based task analysis
+- Recommended steps for tasks
+- AI-generated task advice
+- Dashboard with task information
+- Analytics
+- Notifications
+- Settings
 
-Users can describe a task and receive:
+## How AI is Used
+
+A user can enter a task such as:
+
+> Fix the production login issue before tomorrow's client demo.
+
+The application sends the task to the backend, where the AI service analyzes it and returns:
 
 - Priority
 - Estimated time
 - Complexity
 - Recommended steps
-- AI-generated advice
+- Advice
 
-The user can then review the AI suggestions and create/manage the task.
+The user can then use the result while planning the task.
 
----
+## Tech Stack
 
-## 🎯 Why IntelliDesk AI?
+### Frontend
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Vite
 
-Traditional task-management applications help users remember **what** they need to do.
+### Backend
+- Python
+- FastAPI
+- REST API
 
-IntelliDesk AI aims to additionally help users understand:
+### Database
+- SQLite
+- SQL
 
-- How important the task may be
-- How complex it may be
-- How much time it could require
-- What steps they could follow
-- How they could approach the task
+### AI
+- Ollama
+- Gemma
 
-The goal is to combine **task management with AI-assisted planning** in a single workspace.
-
----
-
-## ✨ Features
-
-### 🔐 Authentication
-- User registration
-- User login
-- Protected application routes
-- Logout functionality
-
-### 📋 Task Management
-- Create tasks
-- Edit tasks
-- Delete tasks
-- Complete tasks
-- Task status management
-- Priority management
-- Search and filtering
-
-### 🤖 AI Task Analysis
-
-The AI analyzes a user's task and provides:
-
-- Priority
-- Estimated time
-- Complexity
-- Recommended action steps
-- AI advice
-
-### 🧠 AI-Assisted Task Creation
-
-Users can analyze a task before creating it.
+## Project Structure
 
 ```text
-Describe Task
-      ↓
-AI Analysis
-      ↓
-Priority
-Complexity
-Estimated Time
-Recommended Steps
-AI Advice
-      ↓
-User Review
-      ↓
-Create Task
+IntelliDesk-AI
+│
+├── backend
+│   ├── models
+│   ├── routes
+│   ├── schemas
+│   ├── services
+│   ├── database.py
+│   └── main.py
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── services
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public
+├── package.json
+├── vite.config.js
+└── README.md
